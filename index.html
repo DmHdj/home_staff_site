@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ваш дом</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="subheader">
+                <a href="tel:84872311345" class="subheader_phone"> 8 (4872) 31-13-45 </a>
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="subheader_btns">
+                    <button id = "application" class="btn">Оставить заявку</button>
+                    <button id = "resume" class="btn">Отправить резюме</button>
+                </div>
+            </div>
+            <nav class="top">
+                <ul class="top_menu">
+                    <li class="top_menu_item"><a href="#" class="top_menu_link">главная</a></li>
+                    <li class="top_menu_item">
+                        <a href="#" class="top_menu_link">подобрать персонал</a>
+                        <ul class="submenu">
+                            <li class="submenu_item"><a href="#" class="submenu_link">О нас</a></li>
+                            <li class="submenu_item"><a href="#" class="submenu_link">Задать вопрос</a></li>
+                            <li class="submenu_item"><a href="#" class="submenu_link">Это интересно</a></li>
+                            <li class="submenu_item"><a href="#" class="submenu_link">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li class="top_menu_item"><a href="#" class="top_menu_link">цены</a></li>
+                    <li class="top_menu_item"></li>
+                    <li class="top_menu_item"><a href="#" class="top_menu_link">оставить заявку</a></li>
+                    <li class="top_menu_item"><a href="#" class="top_menu_link">оставить вакансию</a></li>
+                    <li class="top_menu_item"><a href="#" class="top_menu_link">контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="modal_application modal">
+                <div class="modal_dialog">
+                    <div class="modal_content">
+                        <form action="#">
+                            <input required placeholder="ФИО" name="full_name" type="text" class="modal_input">
+                            <input required placeholder="Телефон" name="phone" type="tel" class="modal_input">
+                            <label class="select_wrapper">
+                                <select name="service" class="modal_select">
+                                    <div class="select_btn"></div>
+                                    <option value="babysitter" required>Няня</option>
+                                    <option value="nurse">Сиделка</option>
+                                    <option value="cleaner">Уборщица</option>
+                                    <option value="maid">Сиделка</option>
+                                </select>
+                            </label>
+                            <div class="select_wrapper">
+                            <label class="select_wrapper">
+                                <select name="schedule" class="modal_select">
+                                    <option value="morning">Утро</option>
+                                    <option value="day">День</option>
+                                    <option value="evening" required>Вечер</option>
+                                    <option value="full_day">Весь день</option>
+                                </select>
+                            </label>
+                            </div>
+                            <textarea placeholder="Дополнительная информация" name="Additional_Information" class="modal_textarea"></textarea>
+                            <button class="btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_resume modal">
+                <div class="modal_dialog">
+                    <div class="modal_content">
+                        <form action="#">
+                            <input required placeholder="ФИО" name="full_name" type="text" class="modal_input">
+                            <input required placeholder="Телефон" name="phone" type="tel" class="modal_input">
+                            <label class="select_wrapper">
+                                <select name="service" class="modal_select">
+                                    <option value="babysitter" required>Няня</option>
+                                    <option value="nurse">Сиделка</option>
+                                    <option value="cleaner">Уборщица</option>
+                                    <option value="maid">Сиделка</option>
+                                </select>
+                            </label>
+                            <input required placeholder="Образование" name="education" type="text" class="modal_input">
+                            <label class="modal_label modal_input">
+                                Прикрепить резюме
+                                <input type="file" class="modal_file" name="resume" required>
+                            </label>
+                            <button class="btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slider_wrapper">
+                <div class="slider_content show">
+                    <img src="img/tab_img_1.jpg" alt="happy family" class="slider_img">
+                </div>
+                <div class="slider_content">
+                    <img src="img/tab_img_2.jpg" alt="mother with daughter" class="slider_img">
+                </div>
+                <div class="slider_content">
+                    <img src="img/tab_img_3.jpg" alt="Housekeeper" class="slider_img">
+                </div>
+                <div class="slider_content">
+                    <img src="img/tab_img_4.jpg" alt="gardener" class="slider_img">
+                </div>
+                <div class="slider_content">
+                    <img src="img/tab_img_5.jpg" alt="grandmother with granddaughter" class="slider_img">
+                </div>
+                <div class="slider_content">
+                    <img src="img/tab_img_6.jpg" alt="driver" class="slider_img">
+                </div>
+            </div>
+            <div class="slider_toggle">
+                <span id="0" class="slider_toggle_item slider_active"></span>
+                <span id="1" class="slider_toggle_item"></span>
+                <span id="2" class="slider_toggle_item"></span>
+                <span id="3" class="slider_toggle_item"></span>
+                <span id="4" class="slider_toggle_item"></span>
+                <span id="5" class="slider_toggle_item"></span>
+            </div>
+        </div>
+        <article class="staff">
+            <div class="staff_wrapper">
+                <div class="staff_permanent">
+                    <div class="staff_permanent_img">
+                        <img src="img/permanent_staff.png" alt="permanent staff">
+                    </div>
+                    <div class="staff_permanent_descr text">
+                        <h2 class="staff_title">Постоянный персонал</h2>
+                        <p>
+                            Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени.
+                        </p>
+                    </div>
+                    <div class="staff_permanent_more">
+                        <button class="btn">ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+                <div class="staff_temporary">
+                    <div class="staff_temporary_img">
+                        <img src="img/temporary_staff.png" alt="temporary staff">
+                    </div>
+                    <div class="staff_temporary_descr text">
+                        <h2 class="staff_title">Временный персонал</h2>
+                        <p>
+                            Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной домработницы - это вовсе не    дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени.
+                        </p>
+                    </div>
+                    <div class="staff_temporary_more">
+                        <button class="btn">ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="gallery">
+            <div class="gallery_wrapper">
+                <div class="gallery_item"><img src="img/babysitter.jpg" alt="babysitter"></div>
+                <div class="gallery_item"><img src="img/nurse.jpg" alt="nurse"></div>
+                <div class="gallery_item"><img src="img/cleaner.jpg" alt="cleaner"></div>
+                <div class="gallery_item"><img src="img/maid.jpg" alt="maid"></div>
+            </div>
+        </div>
+        <main class="main">
+            <h1 class="main_title">Заголовок</h1>
+            <div class="main_descr text">
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени
+                </p>
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала.
+                    Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру или получить, наконец, передышку от выполнения бесконечных домашних обязанностей, но и для всех остальных членов семьи, которые могут провести вместе свободный вечер или выходные. А доступные цены, которые устанавливает на свои услуги наша компания, и предлагаемый нами широкий выбор различных категорий домашнего персонала делают исключительно удобным и, главное, безопасным процесс поиска няни для малыша, сиделки для пожилых членов семьи или домработницы для квартиры или загородного особняка.
+                </p>
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала.
+                    Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру или получить, наконец, передышку от выполнения бесконечных домашних обязанностей, но и для всех остальных членов семьи, которые могут провести вместе свободный вечер или выходные. А доступные цены, которые устанавливает на свои услуги наша компания, и предлагаемый нами широкий выбор различных категорий домашнего персонала делают исключительно удобным и, главное, безопасным процесс поиска няни для малыша, сиделки для пожилых членов семьи или домработницы для квартиры или загородного особняка.
+                </p>
+            </div>
+        </main>
+        <footer>
+            <nav class="bottom">
+                <ul class="bottom_menu">
+                    <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">главная</a></li>
+                    <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">подобрать персонал</a></li>
+                    <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">цены</a></li>
+                    <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">главная</a></li>
+                    <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">подобрать персонал</a></li>
+                    <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">цены</a></li>
+                </ul>
+            </nav>
+            <div class="subfooter">
+                <a href="tel:84872311345" class="subfooter_phone">8 (4872) 31-13-45</a>
+                <div class="copyright">
+                    <span class="copyright_text">Разработка и продвижение сайта компанией «Юни Веб» - </span>
+                    <a href="https://uniofweb.ru/" target="_blank"><img src="img/logo_uw.png" alt="UW logo"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
